@@ -1,4 +1,4 @@
-def input(prompt, file = "stdin.txt"):
+def input(prompt = "", /, file = "stdin.txt"):
   global __incount__
   try:
     __incount__ += 1
