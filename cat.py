@@ -7,7 +7,7 @@ def input(prompt, file = "stdin.txt"):
   print(prompt, end="")
   with open(file) as f:
     try:
-      print(inn := f.read().split('\n')[__incount__], end="")
+      print(inn := f.read().split('\n')[__incount__])
     except IndexError:
       raise EOFError("EOF when reading a line")
   return inn
