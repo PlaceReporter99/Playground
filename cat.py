@@ -1,4 +1,4 @@
-def input(prompt, file):
+def input(prompt, file = "stdin.txt"):
   print(prompt, end="")
   with open(file) as f:
     print(inn := f.readline())
